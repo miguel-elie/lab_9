@@ -1,5 +1,12 @@
-def encoder():
-    print("TEST")
+def encoder(old_password):
+    old_pass_list = []
+    for i in old_password:
+        old_pass_list.append(str(int(i) + 3))
+    new_password = "".join(old_pass_list)
+    return new_password
+
+def decoder():
+    print()
 
 if __name__ == "__main__":
     while True:
@@ -13,11 +20,8 @@ if __name__ == "__main__":
         password = None
         #ENCODER
         if menu_option == 1:
-            old_password = (input("Please enter your password to encode: "))
-            old_pass_list = []
-            for i in old_password:
-                old_pass_list.append(str(int(i)+3))
-            password = "".join(old_pass_list)
+            temp_password = (input("Please enter your password to encode: "))
+            password = encoder(temp_password)
             print("Your password has been encoded and stored!")
         #DECODER
         if menu_option == 2:
