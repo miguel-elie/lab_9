@@ -20,6 +20,7 @@ def decode():
     print()
 
 if __name__ == "__main__":
+    password = None
     while True:
         menu_option = int(input("\nMenu\n"
                                 "-------------\n"
@@ -28,7 +29,6 @@ if __name__ == "__main__":
                                 "3. Quit\n"
                                 "\n"
                                 "Pleaser enter an option: "))
-        password = None
         #ENCODER
         if menu_option == 1:
             temp_password = (input("Please enter your password to encode: "))
