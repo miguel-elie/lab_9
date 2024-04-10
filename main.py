@@ -1,4 +1,7 @@
-def encoder(old_password):
+#Name: Miguel Elie
+#Collaborator: Parker Grimes
+#Lab 9
+def encode(old_password):
     old_pass_list = []
     for i in old_password:
         if int(i) >= 7:
@@ -13,7 +16,7 @@ def encoder(old_password):
     new_password = "".join(old_pass_list)
     return new_password
 
-def decoder():
+def decode():
     print()
 
 if __name__ == "__main__":
@@ -29,7 +32,7 @@ if __name__ == "__main__":
         #ENCODER
         if menu_option == 1:
             temp_password = (input("Please enter your password to encode: "))
-            password = encoder(temp_password)
+            password = encode(temp_password)
             print("Your password has been encoded and stored!")
         #DECODER
         if menu_option == 2:
