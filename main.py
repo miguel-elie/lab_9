@@ -30,7 +30,6 @@ if __name__ == "__main__":
         if menu_option == 1:
             temp_password = (input("Please enter your password to encode: "))
             password = encoder(temp_password)
-            print(password)
             print("Your password has been encoded and stored!")
         #DECODER
         if menu_option == 2:
